@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: light;
+  --page-color: #52d5f8;
+  --page-sec-color: #c6c3c3;
+  --comp-color: #5471f8;
+  --comp-sec-color: #fedf36;
+  --comp-tert-color: #03097d;
+  --font-color: #fedf36;
+  --font-sec-color: #000000;
+  --input-bg-inactive-color: rgba(254, 223, 54, 0.50);
+  --input-bg-active-color: rgba(254, 223, 54, 0.70);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: var(--page-color);
+  color: var(--font-color);
+  font-family: Verdana;
+}
+
+.formContainer {
+  display: block;
+  height: 60%;
+  width: 60%;
+  margin: 20% 20% 20% 20%;
+  background-color: var(--comp-color);
+  border-radius: 5px;
+  border-left: 8px solid var(--comp-sec-color);
+  border-bottom: 5px solid var(--comp-tert-color);
+  padding: 1em;
+}
+
+.formLabel, .formText {
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  clear: left;
+  font-size: 28px;
+}
+
+.formText {
+  margin-bottom: 0.5em;
+  border-top: 1px solid var(--comp-tert-color);
+  border-bottom: 3px solid var(--comp-sec-color);
+  border-right: 1px solid var(--comp-tert-color);
+  border-left: 3px solid var(--comp-sec-color);
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.2) 5px 5px;
+  background-color: var(--input-bg-inactive-color);
+  color: var(--font-sec-color);
+}
+
+  .formText:focus {
+    background-color: var(--input-bg-active-color);
+  }
+
+.formLabel {
+  color: var(--font-color);
+}
+
+.formSubmit {
+    width: 25%;
+    margin-right: 10%;
+    margin-left: 65%;
+    background-color: var(--comp-sec-color);
+    border: 2px solid var(--comp-tert-color);
+    border-radius: 5px;
+    color: var(--comp-tert-color);
+    font-size: 20px;
+}
+
+  .formSubmit:hover {
+    box-shadow: rgba(0,0,0,0.2) 4px 4px inset;
+  }

@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: "pokemon", component: PokemonComponent },
   { path: "fanart", component: GalleryComponent },
   { path: "fanart/:id", component: FanartComponent },
-  { path: "user", component: WishlistComponent }
+  { path: "user/:id", component: WishlistComponent }
 ];
 
 @NgModule({

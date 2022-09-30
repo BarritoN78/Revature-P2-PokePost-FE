@@ -1,1 +1,9 @@
-<p>login works!</p>
+<div id="loginDiv" class="formContainer">
+  <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit($event)">
+    <label class="formLabel" id="lblEmailLogin" for="txtEmailLogin">Email:</label>
+    <input class="formText" id="txtEmailLogin" formControlName="email" type="text">
+    <label class="formLabel" id="lblPassLogin" for="txtPassLogin">Password:</label>
+    <input class="formText" id="txtPassLogin" formControlName="password" type="password">
+    <button class="formSubmit" id="btnSubmitLogin" type="submit">Log In</button>
+  </form>
+</div>
